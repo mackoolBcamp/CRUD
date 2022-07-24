@@ -1,21 +1,14 @@
-.card-container {
-  width: 500px;
-  height: 600px;
-  border: none;
-  padding: none;
-  margin: 10px 10px 10px 10px;
-  background-color: blueviolet;
-}
-.card-deck {
-  width: 600px;
-  height: 550px;
-  background-color: aqua;
-  justify-items: center;
-
-  justify-content: center;
-  justify-items: center;
+.d-flex {
+  background-image: url("../assets/img/background2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
-.full-h {
+.container {
+  padding-top: 50px;
+}
+.card {
   padding-top: 20px;
 }

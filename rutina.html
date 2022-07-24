@@ -12,10 +12,10 @@
     />
     <link rel="stylesheet" href="../css/style-rutina.css" />
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Fitness Club</a>
+        <a class="navbar-brand" href="./index.html">Fitness Club</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -31,7 +31,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
+              <a class="nav-link" href="./index.html"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
@@ -39,21 +39,21 @@
               <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+              <a class="nav-link disabled" href="#">Planes</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <div class="container">
-      <div class="card-container">
+      <div class="container-fluid">
         <div class="card-deck">
           <div class="card">
             <!-- <img class="card-img-top" src="..." alt="Card image cap" /> -->
             <div class="card-body">
-              <div class="contenedor-forms full-h">
-                <h4 id="Bienvenido">Bienvenidos</h4>
-                <h5 id="name-user"></h5>
+              <!-- <div class="container"> -->
+                <h4 id="Bienvenido">${nombre}   Crearemos tu rutina</h4>
+                <h7 id="name-user">Elige tus ejercicio para el dia de hoy</h7>
                 <form id="formulario">
                   <div class="mb-3">
                     <!-- <label for="exampleInputEmail1" class="form-label">Paso 1</label> -->
@@ -65,36 +65,22 @@
                     />
                     
                   </div>
-
-                  <div class="mb-3">
-                    <!-- <label for="exampleInputEmail1" class="form-label">Paso 1</label> -->
-                    <input
-                      class="form-control"
-                      id="InputUI2"
-                      aria-describedby="emailHelp"
-                      placeholder=" No. de Repeticiones"
-                    />
-                    
-                  </div>
-
-                  <div class="buttonUI">
+                   <div class="buttonUI">
                     <button
                       type="submit"
                       class="btn btn-primary"
-                    
-                    >
+                      >
                       crear
                     </button>
-
                   </div>
                 </form>
-              </div>
+              <!-- </div> -->
             </div>
           </div>
           <div class="card">
-            <!-- <img class="card-img-top" src="..." alt="Card image cap" /> -->
+            <h6 class="card-title p-md-3">Da un check a los que estas seguro y elimina los que no</h6>
             <div id="listaTareas">
-              <h5 class="card-title">Aqui la tabla</h5>
+              
               <div class="alert alert-primary" role="alert">
                 <i class="fa fa-list" aria-hidden="true"></i>
                 <strong>Contenido tarea</strong>
@@ -118,21 +104,11 @@
 
 
           </div>
-          <div class="card">
-            <!-- <img class="card-img-top" src="..." alt="Card image cap" /> -->
-            <div class="card-body">
-              <h5 class="card-title">aqui resultados</h5>
-              <p class="card-text">tabla de resultados</p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
 
-    <footer class="text-center text-white" style="background-color: #f1f1f1">
+    <footer class="text-center text-white mt-auto" style="background-color: #f1f1f1">
       <!-- Grid container -->
       <div class="container pt-4">
         <!-- Section: Social media -->

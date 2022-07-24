@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", mostrarBD);
 
 function mostrarBD() {
   listaTareas.innerHTML = "";
-  arrayTareas = JSON.parse(localStorage.getItem("tareas"));
+  arrayTareas = JSON.parse(localStorage.getItem("tareas")) || [];
   for (var i = 0; i < arrayTareas.length; i++) {
     if (arrayTareas[i].estado === true) {
       listaTareas.innerHTML += `
