@@ -52,14 +52,14 @@
             <!-- <img class="card-img-top" src="..." alt="Card image cap" /> -->
             <div class="card-body">
               <div class="contenedor-forms full-h">
-                <h4 id="Bienvenido">Bienvenido</h4>
+                <h4 id="Bienvenido">Bienvenidos</h4>
                 <h5 id="name-user"></h5>
-                <form>
+                <form id="formulario">
                   <div class="mb-3">
                     <!-- <label for="exampleInputEmail1" class="form-label">Paso 1</label> -->
-                    <input
+                    <input type="text"
                       class="form-control"
-                      id="InputUI1"
+                      id="tarea"
                       aria-describedby="emailHelp"
                       placeholder=" empieza a calentar"
                     />
@@ -79,12 +79,13 @@
 
                   <div class="buttonUI">
                     <button
-                      type="button"
+                      type="submit"
                       class="btn btn-primary"
-                      onclick="getData()"
+                    
                     >
-                      listo
+                      crear
                     </button>
+
                   </div>
                 </form>
               </div>
@@ -92,41 +93,30 @@
           </div>
           <div class="card">
             <!-- <img class="card-img-top" src="..." alt="Card image cap" /> -->
-            <div class="card-body">
+            <div id="listaTareas">
               <h5 class="card-title">Aqui la tabla</h5>
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Ejercicio</th>
-                    <th scope="col">Repeticiones</th>
-                    <th scope="col">opción</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Sentadilla</td>
-                    <td>8</td>
-                     <!--<td>@mdo</td> -->
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Peso muerto</td>
-                    <td>6</td>
-                    <!-- <td>@fat</td> -->
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>dominadas</td>
-                    <td>6</td>
-                    <!-- <td>@twitter</td> -->
-                  </tr>
-                </tbody>
-              </table>
+              <div class="alert alert-primary" role="alert">
+                <i class="fa fa-list" aria-hidden="true"></i>
+                <strong>Contenido tarea</strong>
+                <span class="float-end">
+                  <i class="fa-solid fa-check ms-3"></i>
+                  <i class="fa-solid fa-trash-can"></i>
+                </span>
+              </div>
                 <small class="text-muted">Last updated 3 mins ago</small>
               </p>
             </div>
+            <!-- <div class="card-body">
+              <h5 class="card-title">Aqui la tabla</h5>
+              <div id="table-contenido">
+                
+              </div>
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div> -->
+
+
+
           </div>
           <div class="card">
             <!-- <img class="card-img-top" src="..." alt="Card image cap" /> -->
@@ -215,7 +205,7 @@
       <!-- Copyright -->
     </footer>
     <script src="./JS/main.js"></script>
-    <script
+        <script
       src="https://kit.fontawesome.com/caed079413.js"
       crossorigin="anonymous"
     ></script>
